@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native';
-import NewAppScreen from "./app/pages/new-app-screen";
+import NewAppScreen from "../pages/new-app-screen";
 
 const App = () => {
     return (

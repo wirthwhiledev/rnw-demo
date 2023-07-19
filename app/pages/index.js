@@ -1,4 +1,4 @@
-import ExampleOne from "./example-1";
+import ExampleOne from "./helloworld";
 import NewAppScreen from "./new-app-screen";
 
 export {
