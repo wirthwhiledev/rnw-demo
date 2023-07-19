@@ -17,13 +17,16 @@ import {
   View,
 } from 'react-native';
 
+import Navbar from "../../components/navbar";
+
 import {
   Colors,
   DebugInstructions,
-  Header,
+  Header as NewAppHeader,
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import { useNavigation } from '@react-navigation/native';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -55,7 +58,8 @@ function Section({children, title}: SectionProps): JSX.Element {
   );
 }
 
-function App(): JSX.Element {
+function NewAppScreen({navigation}): JSX.Element {
+console.log(navigation)
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -64,6 +68,8 @@ function App(): JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
+      {/* Add Navbar! */}
+      <Navbar hello="world"/>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
@@ -71,13 +77,13 @@ function App(): JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Header />
+        <NewAppHeader />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
+            Edit <Text style={styles.highlight}>App.js</Text> to change this
             screen and then come back to see your edits.
           </Section>
           <Section title="See Your Changes">
@@ -115,4 +121,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default NewAppScreen;

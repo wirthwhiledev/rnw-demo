@@ -2,12 +2,22 @@
 
 using System.Collections.Generic;
 
+// Namespaces from react-native-screens
+using RNScreens;
+
+// Namespaces from react-native-svg
+using RNSVG;
+
 namespace Microsoft.ReactNative.Managed
 {
     internal static class AutolinkedNativeModules
     {
         internal static void RegisterAutolinkedNativeModulePackages(IList<IReactPackageProvider> packageProviders)
         { 
+            // IReactPackageProviders from react-native-screens
+            packageProviders.Add(new RNScreens.ReactPackageProvider());
+            // IReactPackageProviders from react-native-svg
+            packageProviders.Add(new RNSVG.ReactPackageProvider());
         }
     }
 }

@@ -1,14 +1,24 @@
-import React from 'react';
-import { SafeAreaView, ScrollView, StatusBar } from 'react-native';
+import 'react-native-gesture-handler';
 
-import { NewAppScreen } from "./app/new-app-screen";
+import React from 'react';
+import { SafeAreaView } from 'react-native';
+import { createDrawerNavigator, DrawerToggleButton } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
+import NewAppScreen from "./app/pages/new-app-screen";
+import ExampleOne from "./app/pages/example-1";
+
+const Drawer = createDrawerNavigator();
+
 
 const App = () => {
     return (
-        <SafeAreaView>
-            <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-            <NewAppScreen />
-        </SafeAreaView>
+    
+            <NavigationContainer>
+                <Drawer.Navigator initialRouteName="Home">
+                    <Drawer.Screen name="Home" component={NewAppScreen} />
+                    <Drawer.Screen name="Basic Page" component={ExampleOne} />
+                </Drawer.Navigator>
+            </NavigationContainer>
     );
 };
 
