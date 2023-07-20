@@ -12,7 +12,6 @@ export default StyleSheet.create({
     h1: {
         fontSize: 20,
         fontWeight: "bold",
-        marginBottom: 20
     },
     form: {
         flexDirection: "row",
@@ -50,6 +49,8 @@ export default StyleSheet.create({
         marginBottom:5
     },  
     list:{
+        width:425,
+        minHeight:50,
         maxHeight:200,
     }
 });

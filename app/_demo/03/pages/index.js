@@ -1,7 +1,7 @@
-import ExampleOne from "./my-page";
+import MyPage from "./my-page";
 import NewAppScreen from "./new-app-screen";
 
 export {
-    ExampleOne,
+    MyPage,
     NewAppScreen
 }

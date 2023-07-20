@@ -17,8 +17,6 @@ import {
   View,
 } from 'react-native';
 
-import Navbar from "../../components/navbar";
-
 import {
   Colors,
   DebugInstructions,
@@ -59,7 +57,6 @@ function Section({children, title}: SectionProps): JSX.Element {
 }
 
 function NewAppScreen({navigation}): JSX.Element {
-console.log(navigation)
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -69,7 +66,6 @@ console.log(navigation)
   return (
     <SafeAreaView style={backgroundStyle}>
       {/* Add Navbar! */}
-      <Navbar hello="world"/>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
