@@ -63,6 +63,7 @@ function NewAppScreen({navigation}): JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
+
   return (
     <SafeAreaView style={backgroundStyle}>
       {/* Add Navbar! */}

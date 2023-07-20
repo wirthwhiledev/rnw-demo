@@ -21,9 +21,15 @@ import { NavigationContainer } from '@react-navigation/native';
 //(you'll likely need to run a nuget restore here but we don't have to)
 //https://github.com/software-mansion/react-native-screens/tree/main/windows/RNScreens
 
+//demo 4 -> debugging
+// 4.1 can use simple debugger statements or console logs
+// 4.2 can also install React Native Extension for VSCode (which I currently have disabled)
+    // then you can  setup launch configurations in VSCode and debug inside of here
+
+//go to next demo about native module building
+
 const App = () => {
     const Drawer = createDrawerNavigator();
-
     return (
         <NavigationContainer>
             <Drawer.Navigator initialRouteName="Home">
