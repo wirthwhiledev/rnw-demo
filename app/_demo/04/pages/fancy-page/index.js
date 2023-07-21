@@ -4,7 +4,7 @@ import {
     Text
 } from "react-native";
 
-import LinearGradient from 'react-native-linear-gradient';
+import LinearGradient from 'react-native-linear-gradient-latest';
 
 //PR that actually allows children and styles to the LinearGradient...these were essential so they were not able to be added
 //https://github.com/react-native-linear-gradient/react-native-linear-gradient/commit/d449d1f58405f6ec89e4e837cb899e1197a9d6f8
