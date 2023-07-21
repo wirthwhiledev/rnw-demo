@@ -15,18 +15,16 @@ import { NavigationContainer } from '@react-navigation/native';
 //npm install @react-navigation/native react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated 
 //npm install @react-navigation/drawer
 
-//update app.JS
-
-//show the .SLN file and show that without me doing anything that some VS project references were added to the SLN
+//1. show the .SLN file and show that without me doing anything that some VS project references were added to the SLN
 //(you'll likely need to run a nuget restore here but we don't have to)
 //https://github.com/software-mansion/react-native-screens/tree/main/windows/RNScreens
+//talk about auto linking
 
-//demo 4 -> debugging
-// 4.1 can use simple debugger statements or console logs
-// 4.2 can also install React Native Extension for VSCode (which I currently have disabled)
-    // then you can  setup launch configurations in VSCode and debug inside of here
+//2. update App.JS to match this. 
+// imports
+// render differences
 
-//go to next demo about native module building
+//go to next demo about Modules that just haven't updated yet... adding a gradient
 
 const App = () => {
     const Drawer = createDrawerNavigator();

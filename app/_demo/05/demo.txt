@@ -1,0 +1,4 @@
+//debugging
+//can use simple debugger statements or console logs in your code and see them in the browser
+//can also install React Native Extension for VSCode (which I currently have disabled)
+    // then you can  setup launch configurations in VSCode and debug inside of here

@@ -6,5 +6,6 @@ import React from 'react';
 import App01 from "./app/_demo/01/App";
 import App02 from "./app/_demo/02/App";
 import App03 from "./app/_demo/03/App";
+import App04 from "./app/_demo/04/App";
 
-export default App03;
+export default App04;

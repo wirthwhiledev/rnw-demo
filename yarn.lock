@@ -6892,6 +6892,16 @@
   "resolved" "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.19.tgz"
   "version" "0.71.19"
 
+"react-native-linear-gradient-latest@npm:react-native-linear-gradient@^2.7.3":
+  "integrity" "sha512-iyJszlZ1Ech2c+2qV+isMvvJKyoctR9ashDkhJg1/cuSF0vQaeLV1FAYTT3qW9doxChJGxVAFfYoxotH0yi3Iw=="
+  "resolved" "https://registry.npmjs.org/react-native-linear-gradient/-/react-native-linear-gradient-2.7.3.tgz"
+  "version" "2.7.3"
+
+"react-native-linear-gradient@git+https://github.com/react-native-linear-gradient/react-native-linear-gradient#28ebf4bc6768c9e7ba47c2f3ee4b95642430cd2a":
+  "integrity" "sha512-60LqEeZjzzLCD09c2s+9Y6vINszjvUo6ZoZwDwMGpiVmpvqsWcQkGc+KcHbT3UVEwOKnI5Kh27qMx/iohmzZxw=="
+  "resolved" "git+ssh://git@github.com/react-native-linear-gradient/react-native-linear-gradient.git#28ebf4bc6768c9e7ba47c2f3ee4b95642430cd2a"
+  "version" "2.6.2"
+
 "react-native-reanimated@>= 1.0.0", "react-native-reanimated@~2.2.0":
   "integrity" "sha512-Nn648MfEEnTCEiWsl1YmfkojiLyV0NMY0EiRdDRbZNfJVfxBuyqhCxI/4Jd7aBi162qpgf8XK2mByYgvF4zLrQ=="
   "resolved" "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-2.2.4.tgz"
