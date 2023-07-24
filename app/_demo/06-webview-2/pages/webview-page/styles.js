@@ -9,8 +9,8 @@ export default StyleSheet.create({
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
-        backgroundColor: "red",
         paddingHorizontal: "10%",
+        paddingVertical: 25,
         h1: {
             flex: 1,
             fontSize: 26,

@@ -45,11 +45,10 @@ function WebViewPage() {
                 <Text style={styles.header.h1} >WebView test....but better</Text>
                 <BetterButton label="Open ThreeJS Page" onPress={openPage.bind(null, "https://threejs.org/examples/#webgl_geometry_teapot")} />
             </View>
-            <Text>current: {source}</Text>
             <View style={styles.webviewContainer}>
                 <WebView useWebView2={true} source={{ uri: source }} style={{ flex: 1 }} />
             </View>
-
+            <Text style={{ position: "absolute", bottom: 0, left: 0, width:"100%"}} >current source: {source}</Text>
         </View>
 
     )
