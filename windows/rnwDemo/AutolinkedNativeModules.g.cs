@@ -14,6 +14,9 @@ using RNScreens;
 // Namespaces from react-native-svg
 using RNSVG;
 
+// Namespaces from react-native-webview
+using ReactNativeWebView;
+
 namespace Microsoft.ReactNative.Managed
 {
     internal static class AutolinkedNativeModules
@@ -28,6 +31,8 @@ namespace Microsoft.ReactNative.Managed
             packageProviders.Add(new RNScreens.ReactPackageProvider());
             // IReactPackageProviders from react-native-svg
             packageProviders.Add(new RNSVG.ReactPackageProvider());
+            // IReactPackageProviders from react-native-webview
+            packageProviders.Add(new ReactNativeWebView.ReactPackageProvider());
         }
     }
 }

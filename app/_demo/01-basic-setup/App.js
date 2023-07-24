@@ -1,11 +1,11 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native';
-import MyPage from "./pages/my-page";
+import { HomePage } from "./pages";
 
 const App = () => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
-            <MyPage />
+            <HomePage />
         </SafeAreaView>
     );
 };
