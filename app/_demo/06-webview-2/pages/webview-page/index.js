@@ -23,7 +23,7 @@
 
 // # This also illustrates a pretty good bug with yet another RNW module: https://github.com/microsoft/react-native-windows/issues/11094
 
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { View, Text } from "react-native";
 import { BetterButton } from '../../components';
 import styles from "./styles";

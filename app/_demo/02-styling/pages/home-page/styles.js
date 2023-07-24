@@ -10,7 +10,7 @@ export default StyleSheet.create({
         alignItems:"flex-start"
     },
     h1: {
-        fontSize: 20,
+        fontSize: 30,
         fontWeight: "bold",
     },
     form: {

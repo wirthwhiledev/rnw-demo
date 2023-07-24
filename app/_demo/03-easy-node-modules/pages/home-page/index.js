@@ -3,7 +3,7 @@
 //Easy to add node modules that don't require linking Windows packages
 
 //#1: React Native has a big commmunity so it's easy to find 3rd party components to leverage
-// pdf readers
+// pdf render
 // webview (which i'll show in a bit)
 // even more basic things like font awesome.
 

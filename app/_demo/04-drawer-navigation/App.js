@@ -5,8 +5,7 @@
 //      Going to add a drawer style navgation
 
 // #2 - Install 5 different packages
-//npm install @react-navigation/native react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated 
-//npm install @react-navigation/drawer
+//npm install @react-navigation/native @react-navigation/drawer react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated
 
 // #3 -  SLN updates
 //      Notice there was an addition to our .SLN file

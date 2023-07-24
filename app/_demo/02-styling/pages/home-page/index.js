@@ -1,16 +1,15 @@
-//DEMO: Core Components
-//Quickly looking at core components vs HTML markup
+//DEMO: Styling Components 
 
-//NOTE: no browswer to parse and render, HTML isn't a thing
+// #4 - add some styling
+//      talk about styling, React StyleSheet, 
+//      other versions of styling like styled-componets (3rd party) - https://blog.logrocket.com/using-styled-components-with-react-native/
 
-// #1 - Update the FlatLight and TextInput to do stuff
+// #2 - change from button to TouchableOpacity
+
+// #3 - Update the FlatLight and TextInput to do stuff
 //          onChangeText stuff, click event on button
 
-// #2 - Talk about the Core Componets
-//          base components that compile to native counterparts during the building process
 
-//#3 - add an activity indicator and show the difference between iOS android and windows
-//          https://reactnative.dev/docs/activityindicator
 
 import React, { useState } from 'react';
 import {
@@ -59,10 +58,7 @@ function MyPage() {
                     return (<View><Text>{item.label}</Text></View>)
                 }}
             />
-
-            {/* CODE #3 */}
-            <ActivityIndicator style={{ marginTop: 50 }} size={80} />
-
+            
         </View>
     );
 }
