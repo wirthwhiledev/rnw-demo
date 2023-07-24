@@ -161,3 +161,7 @@ updateWinUI2xVersion('react-native-webview/windows', 'ReactNativeWebView');
 updateTargetMinVersion('react-native-windows/Microsoft.ReactNative.Managed', 'Microsoft.ReactNative.Managed');
 updateTargetMinVersion('react-native-windows/Microsoft.ReactNative', 'Microsoft.ReactNative', true);
 updateTargetMinVersion('react-native-webview/windows/ReactNativeWebView', 'ReactNativeWebView', true);
+updateTargetMinVersion('react-native-screens/windows/RNScreens', 'RNScreens', true);
+updateTargetMinVersion('react-native-linear-gradient/windows/BVLinearGradient/BVLinearGradient', 'BVLinearGradient', true,);
+updateTargetMinVersion('react-native-linear-gradient-latest/windows/BVLinearGradient/BVLinearGradient', 'BVLinearGradient', true,);
+updateTargetMinVersion('react-native-svg/windows/RNSVG', 'RNSVG', true,);
