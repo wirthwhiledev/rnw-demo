@@ -47,7 +47,7 @@ function WebViewPage() {
             </View>
             <Text>current: {source}</Text>
             <View style={styles.webviewContainer}>
-                <WebView source={{ uri: source }} style={{ flex: 1 }} />
+                <WebView useWebView2={true} source={{ uri: source }} style={{ flex: 1 }} />
             </View>
 
         </View>
