@@ -24,8 +24,6 @@ import {
 import styles from './styles';
 
 function MyPage() {
-
-    //CODE #1 - adding logic 
     const [items, setItems] = useState([]);
     const [newItem, onChangeNewItem] = useState("");
 
@@ -38,9 +36,6 @@ function MyPage() {
         <View style={styles.page}>
             <Text style={styles.h1}>Hello That Conference</Text>
             <View style={styles.form}>
-
-                {/* CODE #2 - binding to buttons */}
-
                 <TextInput style={styles.input}
                     onChangeText={text => onChangeNewItem(text)}
                     value={newItem} />
@@ -58,7 +53,7 @@ function MyPage() {
                     return (<View><Text>{item.label}</Text></View>)
                 }}
             />
-            
+
         </View>
     );
 }

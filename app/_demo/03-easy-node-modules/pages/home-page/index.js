@@ -45,8 +45,9 @@ function MyPage() {
             {/* CODE #2 - convert to a side by side and add icon */}
 
             <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 20 }}>
+                <FontAwesomeIcon icon={faTree} style={{ marginRight: 10 }} size={40} color="#f74646" />
                 <Text style={styles.h1}>Hello That Conference</Text>
-                <FontAwesomeIcon icon={faTree} style={{ marginLeft: 10 }} size={20} color="#f74646" />
+                <FontAwesomeIcon icon={faTree} style={{ marginLeft: 10 }} size={40} color="#f74646" />
             </View>
             <View style={styles.form}>
                 <TextInput style={styles.input}
