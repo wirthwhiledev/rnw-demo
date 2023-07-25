@@ -27,13 +27,10 @@ namespace rnwDemo
 
             Microsoft.ReactNative.Managed.AutolinkedNativeModules.RegisterAutolinkedNativeModulePackages(PackageProviders); // Includes any autolinked modules
 
-            PackageProviders.Add(new ReactPackageProvider());
-
-			//PackageProviders.Add(new Microsoft.ReactNative.Managed.ReactPackageProvider()); // Includes any modules in this project
-			//PackageProviders.Add(new rnwDemo.ReactPackageProvider());
+            //PackageProviders.Add(new ReactPackageProvider());
 
 			InitializeComponent();
-        }
+        }  
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
