@@ -29,7 +29,10 @@ namespace rnwDemo
 
             PackageProviders.Add(new ReactPackageProvider());
 
-            InitializeComponent();
+			//PackageProviders.Add(new Microsoft.ReactNative.Managed.ReactPackageProvider()); // Includes any modules in this project
+			//PackageProviders.Add(new rnwDemo.ReactPackageProvider());
+
+			InitializeComponent();
         }
 
         /// <summary>

@@ -22,18 +22,6 @@ import {
     FlatList,
 } from 'react-native';
 
-function Start() {
-    return (
-        <View>
-            <Text>Hello That Conference!</Text>
-            <TextInput />
-            <Button title="Do Something" />
-            <Text>Super Cool Items</Text>
-            <FlatList />
-        </View>
-    )
-}
-
 function MyPage() {
     return (
         <View>

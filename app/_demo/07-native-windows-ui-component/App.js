@@ -10,7 +10,7 @@ const App = () => {
     const Drawer = createDrawerNavigator();
     return (
         <NavigationContainer>
-            <Drawer.Navigator initialRouteName="Fancy Page">
+            <Drawer.Navigator initialRouteName="Home">
                 <Drawer.Screen name="Home" component={MyPage} />
                 <Drawer.Screen name="New App Page" component={NewAppScreen} />
                 <Drawer.Screen name="Fancy Page" component={FancyPage} />
