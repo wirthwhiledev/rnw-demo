@@ -11,4 +11,4 @@ import App06 from "./app/_demo/06-webview-2/App";
 import App07 from "./app/_demo/07-native-windows-ui-component/App";
 //DEBUGGING - import App08 from "./app/_demo/08-debugging/App";
 
-export default App01;
+export default Boilerplate;
