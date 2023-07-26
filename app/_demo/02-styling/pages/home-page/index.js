@@ -1,16 +1,3 @@
-//DEMO: Styling Components 
-
-// #4 - add some styling
-//      talk about styling, React StyleSheet, 
-//      other versions of styling like styled-componets (3rd party) - https://blog.logrocket.com/using-styled-components-with-react-native/
-
-// #2 - change from button to TouchableOpacity
-
-// #3 - Update the FlatLight and TextInput to do stuff
-//          onChangeText stuff, click event on button
-
-
-
 import React, { useState } from 'react';
 import {
     View,

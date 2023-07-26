@@ -14,7 +14,7 @@ import styles from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faTree } from '@fortawesome/free-solid-svg-icons';
 
-let acc = requireNativeComponent('AaronsCustomControl');
+//let ACC = requireNativeComponent('AaronsCustomControl');
 
 
 function MyPage() {
@@ -28,7 +28,7 @@ function MyPage() {
 
     return (
         <View style={styles.page}>
-            <acc />
+            <ACC />
             <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 20 }}>
                 <FontAwesomeIcon icon={faTree} style={{ marginRight: 10 }} size={40} color="#f74646" />
                 <Text style={styles.h1}>Hello That Conference</Text>

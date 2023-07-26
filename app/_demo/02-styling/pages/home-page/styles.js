@@ -1,8 +1,5 @@
 import { StyleSheet } from "react-native";
 
-//Talk about styles?
-//https://reactnative.dev/docs/
-
 export default StyleSheet.create({
     page: {
         paddingTop: 32,

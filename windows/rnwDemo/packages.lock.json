@@ -2,12 +2,6 @@
   "version": 1,
   "dependencies": {
     "UAP,Version=v10.0.18362": {
-      "Microsoft.JavaScript.Hermes": {
-        "type": "Direct",
-        "requested": "[0.1.15, )",
-        "resolved": "0.1.15",
-        "contentHash": "My/u5RvxoymtwWokoweU6iVpuP79w271UjadcmSNqnQ9ESIv00tlVP4sHnIiN3t2lJNDeciyE1EVF4swGPECKQ=="
-      },
       "Microsoft.NETCore.UniversalWindowsPlatform": {
         "type": "Direct",
         "requested": "[6.2.9, )",
@@ -28,6 +22,16 @@
         "dependencies": {
           "Microsoft.Web.WebView2": "1.0.1264.42"
         }
+      },
+      "boost": {
+        "type": "Transitive",
+        "resolved": "1.76.0",
+        "contentHash": "p+w3YvNdXL8Cu9Fzrmexssu0tZbWxuf6ywsQqHjDlKFE5ojXHof1HIyMC3zDLfLnh80dIeFcEUAuR2Asg/XHRA=="
+      },
+      "Microsoft.JavaScript.Hermes": {
+        "type": "Transitive",
+        "resolved": "0.1.15",
+        "contentHash": "My/u5RvxoymtwWokoweU6iVpuP79w271UjadcmSNqnQ9ESIv00tlVP4sHnIiN3t2lJNDeciyE1EVF4swGPECKQ=="
       },
       "Microsoft.Net.Native.Compiler": {
         "type": "Transitive",
@@ -59,6 +63,11 @@
         "type": "Transitive",
         "resolved": "1.0.1264.42",
         "contentHash": "7OBUTkzQ5VI/3gb0ufi5U4zjuCowAJwQg2li0zXXzqkM+S1kmOlivTy1R4jAW+gY5Vyg510M+qMAESCQUjrfgA=="
+      },
+      "Microsoft.Windows.SDK.BuildTools": {
+        "type": "Transitive",
+        "resolved": "10.0.22000.194",
+        "contentHash": "4L0P3zqut466SIqT3VBeLTNUQTxCBDOrTRymRuROCRJKazcK7ibLz9yAO1nKWRt50ttCj39oAa2Iuz9ZTDmLlg=="
       },
       "NETStandard.Library": {
         "type": "Transitive",
@@ -135,10 +144,16 @@
         "resolved": "2.2.9",
         "contentHash": "qF6RRZKaflI+LR1YODNyWYjq5YoX8IJ2wx5y8O+AW2xO+1t/Q6Mm+jQ38zJbWnmXbrcOqUYofn7Y3/KC6lTLBQ=="
       },
+      "Win2D.uwp": {
+        "type": "Transitive",
+        "resolved": "1.26.0",
+        "contentHash": "smA/NJWM3ruhWeKPHmCyW8PX8w1ckD9SN7qWEOePe/iuFKvLyC8govCHq/F40hQCRs8zBqHWaWBpekTnQuXx6w=="
+      },
       "bvlineargradient": {
         "type": "Project",
         "dependencies": {
-          "Microsoft.ReactNative": "[1.0.0, )"
+          "Microsoft.ReactNative": "[1.0.0, )",
+          "Microsoft.UI.Xaml": "[2.8.0, )"
         }
       },
       "common": {
@@ -150,6 +165,7 @@
       "folly": {
         "type": "Project",
         "dependencies": {
+          "boost": "[1.76.0, )",
           "fmt": "[1.0.0, )"
         }
       },
@@ -158,7 +174,11 @@
         "dependencies": {
           "Common": "[1.0.0, )",
           "Folly": "[1.0.0, )",
-          "ReactCommon": "[1.0.0, )"
+          "Microsoft.JavaScript.Hermes": "[0.1.15, )",
+          "Microsoft.UI.Xaml": "[2.8.0, )",
+          "Microsoft.Windows.SDK.BuildTools": "[10.0.22000.194, )",
+          "ReactCommon": "[1.0.0, )",
+          "boost": "[1.76.0, )"
         }
       },
       "microsoft.reactnative.managed": {
@@ -171,25 +191,30 @@
       "reactcommon": {
         "type": "Project",
         "dependencies": {
-          "Folly": "[1.0.0, )"
+          "Folly": "[1.0.0, )",
+          "boost": "[1.76.0, )"
         }
       },
       "reactnativewebview": {
         "type": "Project",
         "dependencies": {
-          "Microsoft.ReactNative": "[1.0.0, )"
+          "Microsoft.ReactNative": "[1.0.0, )",
+          "Microsoft.UI.Xaml": "[2.8.0, )"
         }
       },
       "rnscreens": {
         "type": "Project",
         "dependencies": {
-          "Microsoft.ReactNative": "[1.0.0, )"
+          "Microsoft.ReactNative": "[1.0.0, )",
+          "Microsoft.UI.Xaml": "[2.8.0, )"
         }
       },
       "rnsvg": {
         "type": "Project",
         "dependencies": {
-          "Microsoft.ReactNative": "[1.0.0, )"
+          "Microsoft.ReactNative": "[1.0.0, )",
+          "Microsoft.UI.Xaml": "[2.8.0, )",
+          "Win2D.uwp": "[1.26.0, )"
         }
       }
     },
@@ -216,6 +241,11 @@
         "type": "Transitive",
         "resolved": "6.2.9",
         "contentHash": "/q9U+SqJTVrocU7CHFd1D4ac2jqPc4U8kPy8F147Li3XGf0Ce9v6UKJqf7nskR+XgVi3IVfUJUcjWLVskG5ZKw=="
+      },
+      "Win2D.uwp": {
+        "type": "Transitive",
+        "resolved": "1.26.0",
+        "contentHash": "smA/NJWM3ruhWeKPHmCyW8PX8w1ckD9SN7qWEOePe/iuFKvLyC8govCHq/F40hQCRs8zBqHWaWBpekTnQuXx6w=="
       }
     },
     "UAP,Version=v10.0.18362/win10-arm-aot": {
@@ -241,6 +271,11 @@
         "type": "Transitive",
         "resolved": "6.2.9",
         "contentHash": "tN7AmnRPUuu29nh9ulL/UGMdzayAe/AQNhM7+fQNKuT4jUlxc61Ilf2djKNJ5MvK8wY69KH0Iz9Yy5+95rB+DQ=="
+      },
+      "Win2D.uwp": {
+        "type": "Transitive",
+        "resolved": "1.26.0",
+        "contentHash": "smA/NJWM3ruhWeKPHmCyW8PX8w1ckD9SN7qWEOePe/iuFKvLyC8govCHq/F40hQCRs8zBqHWaWBpekTnQuXx6w=="
       }
     },
     "UAP,Version=v10.0.18362/win10-arm64-aot": {
@@ -266,6 +301,11 @@
         "type": "Transitive",
         "resolved": "6.2.9",
         "contentHash": "gupfeyxXmaOyqLps1gGLh4Lzh5Wee6iuKpgZ70l2nmoHtzqCdk9aK4i+03259M6X2r7BXoIjJJml0paXBQY1kw=="
+      },
+      "Win2D.uwp": {
+        "type": "Transitive",
+        "resolved": "1.26.0",
+        "contentHash": "smA/NJWM3ruhWeKPHmCyW8PX8w1ckD9SN7qWEOePe/iuFKvLyC8govCHq/F40hQCRs8zBqHWaWBpekTnQuXx6w=="
       }
     },
     "UAP,Version=v10.0.18362/win10-x64": {
@@ -291,6 +331,11 @@
         "type": "Transitive",
         "resolved": "6.2.9",
         "contentHash": "JjnUToWq2LQfNKtiqld4YYkgUcC3tCQ0RvRKiut0B7AgS+Eo/HnI/viFiH4FoNG7pFvcWoKimLctj06IgJoiyA=="
+      },
+      "Win2D.uwp": {
+        "type": "Transitive",
+        "resolved": "1.26.0",
+        "contentHash": "smA/NJWM3ruhWeKPHmCyW8PX8w1ckD9SN7qWEOePe/iuFKvLyC8govCHq/F40hQCRs8zBqHWaWBpekTnQuXx6w=="
       }
     },
     "UAP,Version=v10.0.18362/win10-x64-aot": {
@@ -316,6 +361,11 @@
         "type": "Transitive",
         "resolved": "6.2.9",
         "contentHash": "XTmgQZIB3JbzwVE0h+GN//VniFM4MmSWjxjtK7g5zypTwtpuj68oulxWqN5R3F19GaUzT+EFdfKXKEWI73/qwQ=="
+      },
+      "Win2D.uwp": {
+        "type": "Transitive",
+        "resolved": "1.26.0",
+        "contentHash": "smA/NJWM3ruhWeKPHmCyW8PX8w1ckD9SN7qWEOePe/iuFKvLyC8govCHq/F40hQCRs8zBqHWaWBpekTnQuXx6w=="
       }
     },
     "UAP,Version=v10.0.18362/win10-x86": {
@@ -341,6 +391,11 @@
         "type": "Transitive",
         "resolved": "6.2.9",
         "contentHash": "BckZHjaqBTSEtvzj0aliq3DQvLOT7C4ei4L8pCgcD3k/MZpECBg8kUsixDanwYtRot+jNXxc6LF5J87cyigGfA=="
+      },
+      "Win2D.uwp": {
+        "type": "Transitive",
+        "resolved": "1.26.0",
+        "contentHash": "smA/NJWM3ruhWeKPHmCyW8PX8w1ckD9SN7qWEOePe/iuFKvLyC8govCHq/F40hQCRs8zBqHWaWBpekTnQuXx6w=="
       }
     },
     "UAP,Version=v10.0.18362/win10-x86-aot": {
@@ -366,6 +421,11 @@
         "type": "Transitive",
         "resolved": "6.2.9",
         "contentHash": "/FxhZW8KuY7aiRcC1Opk5+48Meg1PYj36LcLVuX6Ty+n4HpMf7xxvNvp0EzSLzW/Ibzqt+iaRWqfOZqiTFZG5g=="
+      },
+      "Win2D.uwp": {
+        "type": "Transitive",
+        "resolved": "1.26.0",
+        "contentHash": "smA/NJWM3ruhWeKPHmCyW8PX8w1ckD9SN7qWEOePe/iuFKvLyC8govCHq/F40hQCRs8zBqHWaWBpekTnQuXx6w=="
       }
     }
   }

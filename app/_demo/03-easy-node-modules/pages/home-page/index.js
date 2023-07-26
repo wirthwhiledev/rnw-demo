@@ -1,18 +1,3 @@
-
-//DEMO: Node Modules Basic
-//Easy to add node modules that don't require linking Windows packages
-
-//#1: React Native has a big commmunity so it's easy to find 3rd party components to leverage
-// pdf render
-// webview (which i'll show in a bit)
-// even more basic things like font awesome.
-
-//#2 -> Adding and referecing Font Awesome
-// npm install @fortawesome/react-native-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core
-// https://github.com/FortAwesome/react-native-fontawesome/tree/master
-
-//-------
-
 import React, { useState } from 'react';
 import {
     View,
@@ -25,10 +10,14 @@ import {
 
 import styles from './styles';
 
-
-// CODE #1 - adding references to FA
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faTree } from '@fortawesome/free-solid-svg-icons';
+
+/* 
+
+npm install @fortawesome/react-native-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core
+
+*/
 
 function MyPage() {
     const [items, setItems] = useState([]);
@@ -42,8 +31,6 @@ function MyPage() {
     return (
         <View style={styles.page}>
 
-            {/* CODE #2 - convert to a side by side and add icon */}
-
             <View style={{ flexDirection: "row", alignItems: "center", marginBottom: 20 }}>
                 <FontAwesomeIcon icon={faTree} style={{ marginRight: 10 }} size={40} color="#f74646" />
                 <Text style={styles.h1}>Hello That Conference</Text>
@@ -52,8 +39,7 @@ function MyPage() {
             <View style={styles.form}>
                 <TextInput style={styles.input}
                     onChangeText={text => onChangeNewItem(text)}
-                    value={newItem}
-                />
+                    value={newItem} />
 
                 <TouchableOpacity style={styles.button} onPress={addNewItemToList}>
                     <Text style={styles.buttonText}>Add to List</Text>
