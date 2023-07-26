@@ -21,7 +21,7 @@ function MyPage() {
 
     return (
         <View style={styles.page}>
-            <Text style={styles.h1}>Hello That Conference</Text>
+            <Text style={{...styles.h1, fontStyle:"italic"}}>Hello That Conference</Text>
             <View style={styles.form}>
                 <TextInput style={styles.input}
                     onChangeText={text => onChangeNewItem(text)}

@@ -5,10 +5,11 @@ import {
     Text,
     TextInput,
     FlatList,
+    ActivityIndicator,
 } from 'react-native';
 
 function MyPage() {
-    const [items, setItems] = useState({label:"Do"}, {label:"Something"})
+    const [items, setItems] = useState([{label:"Do"}, {label:"Something"}])
     return (
         <View>
             <Text>Hello That Conference</Text>

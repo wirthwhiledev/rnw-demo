@@ -9,6 +9,7 @@ export default StyleSheet.create({
     h1: {
         fontSize: 30,
         fontWeight: "bold",
+        color:"blue"
     },
     form: {
         flexDirection: "row",
